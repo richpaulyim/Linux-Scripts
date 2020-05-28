@@ -15,6 +15,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " different version somewhere else.
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 Plugin 'vim-syntastic/syntastic'
+Plugin 'morhetz/gruvbox'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
@@ -25,7 +26,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-"
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -35,13 +36,14 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-color slate
+colo gruvbox
 set number 
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set wrap
 set linebreak
+set relativenumber
 
 " nerd toggle short cut
 map <C-n> :NERDTreeToggle<CR>
@@ -51,6 +53,10 @@ map <C-p> :!python3 %<CR>
 
 let g:tex_flavor = "latex"
 let g:vimtex_view_general_viewer = 'evince'
+
+" gruvbox config
+let g:gruvbox_contrast_dark = 'hard'
+set bg=dark
 
 " write and save
 map <C-t> :w <CR>

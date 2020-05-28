@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-force_color_prompt=yes
+#force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -57,7 +57,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-   PS1='${debian_chroot:+($debian_chroot)}\[\033[0;91m\]!\u\[\033[1;32m\]@\h\[\033[1;96m\]#\T\[\033[1;33m\]:\w$\[\033[1;37m\] '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[0;91m\]!\u\[\033[1;32m\]@\h\[\033[1;96m\]#\T\[\033[1;33m\]:\w$\[\033[1;37m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -116,6 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+
 # opening files in terminal
 alias gc='google-chrome &'
 
@@ -123,10 +125,13 @@ alias gc='google-chrome &'
 alias qn='cd ~/Documents/Spring'
 
 # create tex
-alias mtex='cp ~/Documents/Templates/file.tex file.tex; vi file.tex'
+alias mtex='cp ~/Documents/Templates/{file.tex,macro.tex} .; vi file.tex'
 
 # create cpp
 alias mcpp='cp ~/Documents/Templates/file.cpp file.cpp; vi file.cpp'
 
 # create virtual environment
 alias denv='source ~/Projects/denv/bin/activate'
+
+# ssh into cluster
+alias dls='ssh richardyim@###.##.##.###'
