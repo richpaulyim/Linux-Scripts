@@ -10,38 +10,56 @@ sudo vi /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
 sudo update-grub
 
-Battery
+Battery *
 sudo apt update
 sudo apt install tlp tlp-rdw powertop
-sudo tlp start
-sudo powertop --auto-tune
+sudo tlp start 
+sudo powertop --auto-tune 
+prime-select
 
-Python stuffs
-sudo add-apt-repository ppa:deadsnakes/ppa
+Python stuffs *
+sudo add-apt-repository ppa:deadsnakes/ppa 
 sudo apt-get update
-sudo apt-get install python3.8 mysql-server python3.8-venv python3.8-dev
+sudo apt-get install python3.8 mysql-server python3.8-venv python3.8-dev 
 python3.8 -m venv denv
 virtual environment 
-pip install --upgrade pip
+pip install --upgrade pipe
 
 R stuffs 
 sudo apt-get install g++ libxml2-dev
 sudo apt-get update
 sudo apt-get install r-base r-base-dev
+sudo apt-get install libmpfr-dev
 Install R studio from website
+$ sudo apt-get -y install libcurl4-gnutls-dev libxml2-dev libssl-dev
+$ sudo su  
+$ R
+> install.packages('devtools', repos='http://cran.rstudio.com/')
 download the vim blackboard theme from tmthemes
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 
-Setup vim and vim-latex
+    deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran40/
+
+    deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/
+
+    deb https://cloud.r-project.org/bin/linux/ubuntu xenial/
+
+    sudo apt-get update
+    sudo apt-get install r-base
+    sudo apt-get install r-base-dev
+add the deb stuff to "/etc/apt/sources.list"
+
+
+Setup vim and vim-latex *
 # import vim run control
 # vim latex setup
 sudo apt-get install git vim
 sudo apt-get install latexmk evince
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git  ... ~/.vim/bundle/Vundle.vim
+run :PluginInstall
+sudo apt-get install texlive texlive-latex-extra texlive-science
 
-For latex
-sudo apt-get install texlive-latex-base texlive-latex-recommended
-
-Setup matlab
+Setup matlab *
 Install the installer from the website
 sudo apt-get install unzip
 unzip matlab*.zip -d Downloads/
