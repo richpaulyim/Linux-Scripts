@@ -44,6 +44,7 @@ set expandtab
 set wrap
 set linebreak
 set relativenumber
+set textwidth=100
 
 " nerd toggle short cut
 map <C-n> :NERDTreeToggle<CR>
