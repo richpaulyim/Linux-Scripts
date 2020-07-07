@@ -116,8 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
-
 # opening files in terminal
 alias gc='google-chrome &'
 
@@ -130,8 +128,15 @@ alias mtex='cp ~/Documents/Templates/{file.tex,macro.tex} .; vi file.tex'
 # create cpp
 alias mcpp='cp ~/Documents/Templates/file.cpp file.cpp; vi file.cpp'
 
-# create virtual environment
+# activate virtual environment
 alias denv='source ~/Projects/denv/bin/activate'
 
-# ssh into cluster
-alias dls='ssh richardyim@###.##.##.###'
+# ssh into cluster 1
+alias dls='ssh richardyim@#'
+
+# ssh into cluster 2
+alias hfc='ssh richardy@#'
+
+# open jupyter notebook in bg
+alias jp='jupyter notebook &'
+

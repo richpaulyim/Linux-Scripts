@@ -1,0 +1,4 @@
+#!/bin/bash
+# sample echo script
+
+echo Hello, world!

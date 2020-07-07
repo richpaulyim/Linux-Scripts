@@ -35,8 +35,8 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
-colo gruvbox
+" colo gruvbox
+colo gruvbox 
 set number 
 set tabstop=4
 set shiftwidth=4
@@ -44,12 +44,14 @@ set expandtab
 set wrap
 set linebreak
 set relativenumber
+set textwidth=80
+set showcmd
 
 " nerd toggle short cut
 map <C-n> :NERDTreeToggle<CR>
 
 " running python code short cut
-map <C-p> :!python3 %<CR>
+map <C-p> :!python %<CR>
 
 let g:tex_flavor = "latex"
 let g:vimtex_view_general_viewer = 'evince'

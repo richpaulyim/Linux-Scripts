@@ -23,7 +23,13 @@ sudo apt-get update
 sudo apt-get install python3.8 mysql-server python3.8-venv python3.8-dev 
 python3.8 -m venv denv
 virtual environment 
-pip install --upgrade pipe
+pip install --upgrade pip
+
+Raspberry Pi Python3.7 *
+sudo apt-get install python3.7 mysql-server python3.7-venv python3.7-dev 
+python3.7 -m venv denv
+virtual environment *
+pip install --upgrade pip
 
 R stuffs 
 sudo apt-get install g++ libxml2-dev
@@ -48,6 +54,12 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD
     sudo apt-get install r-base
     sudo apt-get install r-base-dev
 add the deb stuff to "/etc/apt/sources.list"
+sudo apt-get install lmodern
+
+$ sudo apt-get -y install libcurl4-gnutls-dev libxml2-dev libssl-dev
+$ sudo su  
+$ R
+> install.packages('devtools', repos='http://cran.rstudio.com/')
 
 
 Setup vim and vim-latex *
@@ -65,11 +77,10 @@ sudo apt-get install unzip
 unzip matlab*.zip -d Downloads/
 sudo ~/Downloads/install
 
-# download everything from SSD
+# download everything from google drive
 
-# make sure to have PATH=$PATH:/home/richpaulyim/bin
-# to add my own bash commands
+VPN setup
+PiVPN 
+no-ip account
+DUC
 
-# add own terminal commands
-# chmod 755 mycommand
-# chmod +x mycommand

@@ -1,0 +1,2 @@
+#!/bin/bash
+/home/richpaulyim/Projects/denv/bin/python /home/richpaulyim/Projects/Web-Briareus/Stock-Hits/ExtractInsert.py 
