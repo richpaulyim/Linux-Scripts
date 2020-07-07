@@ -140,3 +140,5 @@ alias hfc='ssh richardy@#'
 # open jupyter notebook in bg
 alias jp='jupyter notebook &'
 
+# run object file called 'test'
+alias test='./test'
