@@ -44,18 +44,17 @@ set expandtab
 set wrap
 set linebreak
 set relativenumber
-<<<<<<< HEAD
 set textwidth=80
 set showcmd
-=======
-set textwidth=100
->>>>>>> 3e00a82ce4c2cff91f651a58bb52eb6d6849a9ef
 
 " nerd toggle short cut
 map <C-n> :NERDTreeToggle<CR>
 
 " running python code short cut
 map <C-p> :!python %<CR>
+
+" running cpp code short cut
+map <C-c> :!gg %<CR>
 
 let g:tex_flavor = "latex"
 let g:vimtex_view_general_viewer = 'evince'
